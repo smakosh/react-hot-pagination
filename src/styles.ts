@@ -5,14 +5,6 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: flex-end;
   padding: 2rem 0;
-
-  button {
-    margin-right: 4px;
-
-    &:last-child {
-      margin-right: unset;
-    }
-  }
 `;
 
 export const Square = styled.button`
@@ -61,5 +53,14 @@ export const Navigate = styled.button`
 
   svg {
     align-self: center;
+  }
+`;
+
+export const PagesWrapper = styled.div`
+  display: flex;
+  align-items: center;
+
+  *:not(:last-child) {
+    margin-right: 4px;
   }
 `;

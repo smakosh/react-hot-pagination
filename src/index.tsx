@@ -1,7 +1,7 @@
 import React, { FC, HTMLAttributes } from 'react';
 import ChevronIcon from './icons/ChevronIcon';
 import SeparatorIcon from './icons/SeparatorIcon';
-import { Navigate, Square, Wrapper } from './styles';
+import { Navigate, Square, Wrapper, PagesWrapper } from './styles';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   range?: number;
@@ -75,21 +75,24 @@ export const Paginate = ({
           />
         }
       </Navigate>
-      {pagination().map((item, i) => {
-        if (item === '...') {
-          return <Separator key={i} />;
-        }
-        return (
-          <Button
-            key={i}
-            type="button"
-            disabled={item === current}
-            onClick={() => handlePagination(Number(item))}
-          >
-            {item}
-          </Button>
-        );
-      })}
+      <PagesWrapper>
+        {pagination().map((item, i) => {
+          if (item === '...') {
+            return <Separator key={i} />;
+          }
+          return (
+            <Button
+              key={i}
+              type="button"
+              disabled={item === current}
+              onClick={() => handlePagination(Number(item))}
+            >
+              {item}
+            </Button>
+          );
+        })}
+      </PagesWrapper>
+
       <Navigate
         type="button"
         onClick={() => handlePagination(current + 1)}
