@@ -26,6 +26,7 @@ export const Paginate = ({
   handlePagination,
   components,
 }: Props) => {
+  // From https://gist.github.com/kottenator/9d936eb3e4e3c3e02598
   const pagination = () => {
     const last = total;
     const left = current - range;
