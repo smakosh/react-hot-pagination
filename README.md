@@ -5,6 +5,34 @@
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/react-hot-pagination
 
+## Example
+
+```tsx
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { Paginate } from 'react-hot-pagination';
+
+const App = () => {
+  const [current, setCurrent] = React.useState(1);
+
+  const handlePagination = (value: number) => setCurrent(value);
+
+  return (
+    <div>
+      <Paginate
+        current={current}
+        handlePagination={handlePagination}
+        range={2}
+        total={30}
+        components={{}}
+      />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
 ## Getting started
 
 ```bash
@@ -45,7 +73,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contributors
 
-- [Myself](https://smakosh.com)x
+- [Myself](https://smakosh.com)
 
 ## Todo
 
