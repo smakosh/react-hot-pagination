@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Paginate, Props } from '../src';
+import { Paginate, Props, usePagination } from '../src';
 
 const meta: Meta = {
   title: 'Paginate component',
@@ -24,14 +24,18 @@ const Template: Story<Props> = (args) => {
 
   const handlePagination = (value: number) => setCurrent(value);
 
+  const pages = usePagination({
+    range: args.range,
+    total: args.total,
+    current: current,
+    components: args.components,
+    handlePagination: handlePagination
+  });
+
   return (
-    <Paginate
-      current={current}
-      handlePagination={handlePagination}
-      range={args.range}
-      total={args.total}
-      components={args.components}
-    />
+    <>
+      { pages }
+    </>
   );
 };
 
