@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -41,11 +41,11 @@
   "size-limit": [
     {
       "path": "dist/react-hot-pagination.cjs.production.min.js",
-      "limit": "17 KB"
+      "limit": "18 KB"
     },
     {
       "path": "dist/react-hot-pagination.esm.js",
-      "limit": "17 KB"
+      "limit": "18 KB"
     }
   ],
   "devDependencies": {
