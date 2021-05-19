@@ -55,12 +55,3 @@ export const Navigate = styled.button`
     align-self: center;
   }
 `;
-
-export const PagesWrapper = styled.div`
-  display: flex;
-  align-items: center;
-
-  *:not(:last-child) {
-    margin-right: 4px;
-  }
-`;
