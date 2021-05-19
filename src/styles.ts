@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: flex-end;
   padding: 2rem 0;
+
+  *:not(:first-child):not(:nth-last-child(-n + 2)) {
+    margin-right: 4px;
+  }
 `;
 
 export const Square = styled.button`
