@@ -27,13 +27,13 @@ const Template: Story<Props> = (args) => {
 
   return (
     <Paginate
-    current={current}
-    handlePagination={handlePagination}
-    range={args.range}
-    total={args.total}
-    components={args.components}
-    hideLeftArrow={args.hideLeftArrow}
-    hideRightArrow={args.hideRightArrow}
+      current={current}
+      handlePagination={handlePagination}
+      range={args.range}
+      total={args.total}
+      components={args.components}
+      hideLeftArrow={args.hideLeftArrow}
+      hideRightArrow={args.hideRightArrow}
     />
   );
 };
