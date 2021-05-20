@@ -19,10 +19,6 @@ export interface Props extends HTMLAttributes<HTMLDivElement> {
   };
 }
 
-export const usePagination = (args: Props): JSX.Element => {
-  return <Paginate {...args} />
-}
-
 export const Paginate = ({
   range = 2,
   total,
