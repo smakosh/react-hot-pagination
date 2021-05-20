@@ -57,7 +57,7 @@ current
 
 | Option           | Default | Type                      | Description                                                 |
 | ---------------- | ------- | ------------------------- | ----------------------------------------------------------- |
-| range            | 2       | {number}                  | TBD                                                         |
+| range            | 2       | {number}                  | Pages shown before after the current page                   |
 | total            | 20      | {number}                  | Total pages                                                 |
 | current          | 1       | {number}                  | Current page                                                |
 | components       |         | {object}                  | your Button, Separator, LeftArrow and RightArrow components |

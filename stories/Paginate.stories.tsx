@@ -31,6 +31,8 @@ const Template: Story<Props> = (args) => {
       range={args.range}
       total={args.total}
       components={args.components}
+      hideLeftArrow={args.hideLeftArrow}
+      hideRightArrow={args.hideRightArrow}
     />
   );
 };

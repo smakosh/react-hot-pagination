@@ -12,8 +12,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Square = styled.button`
-  width: 32px;
-  height: 32px;
+  padding: 0px 12px;
   border: 1px solid #000;
   background: transparent;
   color: #000;
