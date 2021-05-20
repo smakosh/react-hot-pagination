@@ -6,12 +6,8 @@ export const Wrapper = styled.div`
   justify-content: flex-end;
   padding: 2rem 0;
 
-  button {
+  *:not(:first-child):not(:nth-last-child(-n + 2)) {
     margin-right: 4px;
-
-    &:last-child {
-      margin-right: unset;
-    }
   }
 `;
 
